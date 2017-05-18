@@ -1,7 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: none;
+	outline: none;
 }
 
 /*Navigation bar*/
@@ -56,6 +57,8 @@
 	/*border: 1px solid black;*/
 }
 
+/*Search Bar*/
+
 .searchbox .search .searchbar {
 	width: 100%;
 	height: 40px;
@@ -64,11 +67,11 @@
 	padding-left: 20px;
 	border: 1px solid rgba(25, 25, 25, 0.2);
 	box-shadow: 0px 1px 3px rgba(25, 25, 25, 0.3);
-	outline: none;
+	font-size: 1.0em;
 }
 
 .searchbox .search .searchbar:focus {
-	border: 1px solid rgba(25, 25, 25, 0.3);
+	border: 1px solid rgba(20, 20, 20, 0.3);
 	box-shadow: 2px 3px 3px rgba(25, 25, 25, 0.1),
 							-2px 3px 3px rgba(25, 25, 25, 0.1);
 }
@@ -79,8 +82,42 @@
 							-2px 3px 3px rgba(25, 25, 25, 0.1);
 }
 
+/*Search Buttons*/
+
 .searchbox .searchbuttons {
-	width: 50%;
 	margin: auto;
+	margin-top: 10px;
+	height: 35px;
 	text-align: center;
+}
+
+.searchbox .searchbuttons button {
+	height: 100%;
+	margin-left: 2px;
+	margin-right: 2px;
+	background: linear-gradient(to bottom, rgba(150, 150, 150, 0.1), rgba(150, 150, 150, 0.13));
+	/*background-color: rgba(150, 150, 150, 0.1);*/
+	font-size: 0.8em;
+	font-weight: bold;
+	color: rgba(50, 50, 50, 0.68);
+	border: 1px solid rgba(170, 170, 170, 0.03);
+	border-radius: 2px;
+}
+
+.searchbox .searchbuttons button:hover {
+	color: black;
+	border: 1px solid rgba(100, 100, 100, 0.3);
+	background: linear-gradient(to bottom, rgba(150, 150, 150, 0.08), rgba(150, 150, 150, 0.13));
+}
+
+.searchbox .searchbuttons button:focus {
+	border: 1px solid rgba(66, 134, 244, 1.0);
+}
+
+#google-search {
+	width: 23%;
+}
+
+#feeling-lucky {
+	width: 25%;
 }
