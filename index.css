@@ -3,6 +3,8 @@
 	padding: 0;
 	border: none;
 	outline: none;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
 }
 
 /*Navigation bar*/
@@ -21,7 +23,7 @@
 }
 
 .nav li {
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
 	font-size: 0.8em;
 	line-height: 50px;
 	height: auto;
@@ -30,7 +32,6 @@
 }
 
 .nav a {
-	text-decoration: none;
 	color: #000;
 }
 
@@ -120,4 +121,52 @@
 
 #feeling-lucky {
 	width: 25%;
+}
+
+/*Footer*/
+
+.footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	border-top: 1px solid rgba(150, 150, 150, 0.2);
+	background: rgba(150, 150, 150, 0.1);
+}
+
+.footer .business {
+	float: left;
+	height: 100%;
+	margin-left: 18px;
+	/*border: 1px solid black;*/
+}
+
+.footer .information {
+	float: right;
+	height: 100%;
+	margin-right: 18px;
+	/*border: 1px solid black;*/
+}
+
+.footer ul {
+	list-style: none;
+	text-align: center;
+}
+
+.footer li {
+	font-size: 0.8em;
+	line-height: 40px;
+	height: auto;
+	display: inline-block;
+}
+
+.footer a {
+	color: rgba(50, 50, 50, 0.8);
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+.footer a:hover {
+	text-decoration: underline;
 }
